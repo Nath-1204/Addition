@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo2</title>
+    <script src="./exo2.js"></script>
+    <style>
+        button{
+            background-color: goldenrod;
+            border: 2px solid yellow;
+            width: 130px;
+            height: 30px;
+        }
+
+        h1{
+            color: darkblue;
+        }
+
+        tbody{
+            background-color: gainsboro;
+        }
+
+        thead{
+            background-color: aquamarine;
+        }
+
+        table{
+            border: 1px solid aquamarine; width: 50%;           
+        }
+
+        input{
+            width: 280px;
+            height: 30px;
+            border: 2px solid brown;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1><u>Entrer 5 nombres entre 9 et 99 : </u></h1>
+        <input type="number" id="input" placeholder="entrer des nombres entiers" max="99" min="5">
+        <button onclick="Envoyer();">envoyer</button>
+        <h1><u>Les nombres entrés :</u></h1>
+        <span id="nombreEntrer"></span>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombres Pairs</th>
+                    <th>Nombres Impairs</th>
+                </tr>
+            </thead>
+            <tbody id="ligne">
+    
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
