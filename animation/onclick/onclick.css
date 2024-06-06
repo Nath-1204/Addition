@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+a{
+    text-decoration: 0;
+    background-color: #fff;
+    color: blueviolet;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transition: 0.5s;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+a:hover{
+    letter-spacing: 5px;
+}
+
+.boite{
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 450px;
+    z-index: 100;
+    padding: 50px;
+    visibility: hidden;
+}
+
+.boite.active {
+    visibility: visible;
+    top: 50%;
+}
+
+.elements img{
+    width: 150px;
+    height: 150px;
+}
+
+.elements{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.elements p {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.boite-inputs input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid blueviolet;
+    outline: 0;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.envoie {
+    width: 100%;
+    background-color: blueviolet;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.close{
+    position: absolute;
+    cursor: pointer;
+    background-color: red;
+    text-transform: uppercase;
+    color: #fff;
+    top: -5px;
+    right: -1px;
+}

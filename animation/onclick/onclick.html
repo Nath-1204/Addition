@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification</title>
+    <link rel="stylesheet" href="onclick.css">
+</head>
+<body>
+    <a href="#" onclick="afficher()">Recevoir les notifications</a>
+    <div class="boite">
+        <div class="elements">
+            <img src="../../img/email.jpg" alt="">
+            <h2>Abonnez-vous !!!</h2>
+            <p>Entrer votre adresse email pour recevoir les notifications</p>
+        </div>
+        <div class="boite-inputs">
+            <input type="email" placeholder="Ex: user@gmail.com">
+            <button type="submit" class="envoie">Envoyer</button>
+            <button class="close" onclick="afficher()">Close</button>
+        </div>
+    </div>
+    <script>
+        function afficher() {
+            var boite = document.querySelector('.boite');
+            boite.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
